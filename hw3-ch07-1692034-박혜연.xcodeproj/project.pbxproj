@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DB4B69808F9B02739DFE922 /* Pods_hw3_ch07_1692034_________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_hw3_ch07_1692034_________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C36420B966411FAEF64759 /* Pods-hw3-ch07-1692034-박혜연.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw3-ch07-1692034-박혜연.release.xcconfig"; path = "Target Support Files/Pods-hw3-ch07-1692034-박혜연/Pods-hw3-ch07-1692034-박혜연.release.xcconfig"; sourceTree = "<group>"; };
+		A56F3B27A836825EF0773046 /* Pods-hw3-ch07-1692034-박혜연.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw3-ch07-1692034-박혜연.debug.xcconfig"; path = "Target Support Files/Pods-hw3-ch07-1692034-박혜연/Pods-hw3-ch07-1692034-박혜연.debug.xcconfig"; sourceTree = "<group>"; };
 		B86D29E3245E48D400EFEEEE /* hw3-ch07-1692034-박혜연.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hw3-ch07-1692034-박혜연.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86D29E6245E48D400EFEEEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86D29E8245E48D400EFEEEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +43,8 @@
 			children = (
 				B86D29E5245E48D400EFEEEE /* hw3-ch07-1692034-박혜연 */,
 				B86D29E4245E48D400EFEEEE /* Products */,
+				F9594CA2DC7847D670ABDAF3 /* Pods */,
+				F8F1080B5716989E2F99D124 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +69,23 @@
 			path = "hw3-ch07-1692034-박혜연";
 			sourceTree = "<group>";
 		};
+		F8F1080B5716989E2F99D124 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DB4B69808F9B02739DFE922 /* Pods_hw3_ch07_1692034_________.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9594CA2DC7847D670ABDAF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A56F3B27A836825EF0773046 /* Pods-hw3-ch07-1692034-박혜연.debug.xcconfig */,
+				10C36420B966411FAEF64759 /* Pods-hw3-ch07-1692034-박혜연.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B86D29F5245E48D400EFEEEE /* Build configuration list for PBXNativeTarget "hw3-ch07-1692034-박혜연" */;
 			buildPhases = (
+				BCC843814B6A65A1E3469BF3 /* [CP] Check Pods Manifest.lock */,
 				B86D29DF245E48D400EFEEEE /* Sources */,
 				B86D29E0245E48D400EFEEEE /* Frameworks */,
 				B86D29E1245E48D400EFEEEE /* Resources */,
+				99451BC9797854F31E30FF69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +153,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99451BC9797854F31E30FF69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hw3-ch07-1692034-박혜연/Pods-hw3-ch07-1692034-박혜연-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hw3-ch07-1692034-박혜연/Pods-hw3-ch07-1692034-박혜연-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hw3-ch07-1692034-박혜연/Pods-hw3-ch07-1692034-박혜연-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC843814B6A65A1E3469BF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hw3-ch07-1692034-박혜연-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B86D29DF245E48D400EFEEEE /* Sources */ = {
@@ -280,9 +346,13 @@
 		};
 		B86D29F6245E48D400EFEEEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A56F3B27A836825EF0773046 /* Pods-hw3-ch07-1692034-박혜연.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				INFOPLIST_FILE = "hw3-ch07-1692034-박혜연/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +367,13 @@
 		};
 		B86D29F7245E48D400EFEEEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10C36420B966411FAEF64759 /* Pods-hw3-ch07-1692034-박혜연.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				INFOPLIST_FILE = "hw3-ch07-1692034-박혜연/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
